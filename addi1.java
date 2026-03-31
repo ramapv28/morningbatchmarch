@@ -1,5 +1,3 @@
-package package1;
-
 public class addi1 {
 
 	public static void main(String[] args) {
