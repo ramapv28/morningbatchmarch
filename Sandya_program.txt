@@ -1,0 +1,414 @@
+Operators with static inputs
+______________________________
+
+import java.lang.System;
+class main{
+    public static void  main(String[] args){
+        System.out.println("Automation testing");
+        byte bt = 100;
+        short s= 10000;
+        int i =1000000;
+        long l = 23998575785L;
+        float f = 23.62f;
+        double d = 12.3444444;
+        boolean bl=false;
+        char c ='r';
+        System.out.println(bt);
+        System.out.println(s);
+        System.out.println(i);
+        System.out.println(l);
+        System.out.println(f);
+        System.out.println(d);
+        System.out.println(bl);
+        System.out.println(c);
+
+         int a= 10;
+            int b= 20;
+            System.out.println("Arithmetic operators");
+            
+            System.out.println("Addition of a+b is" +(a+b));
+            System.out.println("Subtraction of a-b is" +(a-b));
+            System.out.println("Multiplication of a*b is" +(a*b));
+            System.out.println("Division of a/b is" +(a/b));          
+            System.out.println("Modulo of a%b is" +(a%b));
+    
+int g= 40;
+int e = 49;
+System.out.println("Relative operators");
+System.out.println(g==e);
+System.out.println(g!=e);
+
+System.out.println(g<e);
+
+System.out.println(g>e);
+
+int age=18;
+boolean id=true;
+System.out.println("Relative operators");
+System.out.println(age>=18 && id);
+System.out.println(age<18 || id);
+System.out.println(!id);
+
+System.out.println("Assingment operators");
+int ab=10;
+ab+=5;
+System.out.println(ab);
+ab-=3;
+System.out.println(ab);
+
+    }
+}
+
+Output:
+_______
+
+Automation testing
+100
+10000
+1000000
+23998575785
+23.62
+12.3444444
+false
+r
+Arithmetic operators
+Addition of a+b is30
+Subtraction of a-b is-10
+Multiplication of a*b is200
+Division of a/b is0
+Modulo of a%b is10
+Relative operators
+false
+true
+true
+false
+Relative operators
+true
+true
+false
+Assingment operators
+15
+12
+
+Operators with dynamic inputs:
+______________________________
+import java.util.Scanner;
+class opr{
+    public static void  main(String[] args){
+        System.out.println("Enter the first number");
+        Scanner s =new Scanner(System.in);
+        int num1=s.nextInt();
+        System.out.println("Enter the second number");    
+        int num2 = s.nextInt();
+        System.out.println("Arithmetic operators");    
+            System.out.println("Addition of a+b is" +(num1+num2));
+            System.out.println("Subtraction of a-b is" +(num1-num2));
+            System.out.println("Multiplication of a*b is" +(num1*num2));
+            System.out.println("Division of a/b is" +(num1/num2));          
+            System.out.println("Modulo of a%b is" +(num1%num2));
+    System.out.println("**********");
+System.out.println("Relative operators");
+System.out.println(num1==num2);
+System.out.println(num1!=num2);
+
+System.out.println(num1<num2);
+
+System.out.println(num1>num2);
+
+System.out.println("Enter the age");
+int age=s.nextInt();
+boolean id=true;
+System.out.println("Relative operators");
+System.out.println(age>=18 && id);
+System.out.println(age<18 || id);
+System.out.println(!id);
+
+System.out.println("Assingment operators");
+num1+=5;
+System.out.println(num1);
+num2-=3;
+System.out.println(num2);
+
+    }
+}
+
+Output:
+_______
+
+Enter the first number
+25
+Enter the second number
+10
+**************
+Arithmetic operators:
+Addition of a+b is35
+Subtraction of a-b is15
+Multiplication of a*b is250
+Division of a/b is2
+Modulo of a%b is5
+**********
+Relative operators
+false
+true
+false
+true
+Enter the age
+45
+******************
+Relative operators
+true
+true
+false
+*******************
+Assingment operators
+15
+7
+
+Even or odd & Voting eligibility  & Largest of two numbers & Positive, Negative ,Zero
+______________________________________________________________________________________
+
+import java.util.Scanner;
+public class inp {
+    public static void main(String[] args) {
+        Scanner s = new Scanner(System.in);
+        System.out.println("Enter the name");
+        String a = s.nextLine();
+        System.out.println("Enter the token number");
+        int b = s.nextInt();
+        s.nextLine();
+        System.out.println("Enter the Branch");
+        String c=s.nextLine();
+        System.out.println("Name  "+a);
+        System.out.println("Token number  "+b);
+        System.out.println("Branch  "+c);
+        
+        System.out.println("***********");
+        System.out.println("ODD OR EVEN");
+
+        if(b%2 == 0){
+        System.out.println("the token number is even");
+        }
+        else if(b%2 != 0){
+                    System.out.println("the token number is odd");
+        }
+        else {
+            System.out.println("enter the valid integers");
+        }
+        System.out.println("***********");
+        System.out.println("Voting eligibility");
+        System.out.println("Enter you age");
+        Scanner sc = new Scanner(System.in);
+        int age = sc.nextInt();
+        if (age < 18){
+        System.out.println("You are not eligible to vote");}
+        else {
+             System.out.println("You are eligible to vote");}
+
+             System.out.println("**************");
+             System.out.println("Largest of two numbers");
+             System.out.println("Enter the first value");
+             int a1 = s.nextInt();
+            System.out.println("Enter the second value");
+
+             int a2 = s.nextInt();
+            
+
+             if (a1==a2){
+                System.out.println("Both are equal");
+             }
+             else 
+             {
+                int largest=(a1>a2)? a1:a2; 
+                System.out.println("The largest number is " +largest );
+            
+             }
+           System.out.println("*************");
+           System.out.println("Positve / Negative / Zero");
+           if (a1 < 0)
+           {
+            System.out.println("The entered number is negative");
+           }
+           else if(a1 > 0)
+           {
+            System.out.println("The entered number is postive");
+           }
+           else 
+           {
+            System.out.println("The entered number is zero");
+           }
+
+        }
+    }
+
+Output:
+_______
+
+Enter the name
+Sandhiya
+Enter the token number
+647
+Enter the Branch
+VNB
+Name  Sandhiya
+Token number  647
+Branch  VNB
+***********
+ODD OR EVEN
+the token number is odd
+***********
+Voting eligibility
+Enter you age
+29
+You are eligible to vote
+**************
+Largest of two numbers
+Enter the first value
+45
+Enter the second value
+28
+The largest number is 45
+*************
+Positve / Negative / Zero
+The entered number is postive
+
+Leap year & Student pass or fails &  Patient temperature & Simple calculator
+____________________________________________________________________________
+
+import java.util.Scanner;
+
+    class arithmetic{
+        public static void main(String args[]){
+
+            System.out.println("Enter the year");
+            Scanner s = new Scanner(System.in);
+            int yr=s.nextInt();
+            if (yr % 4 == 0){
+                System.out.println("This is leap year");
+            }
+            else if(yr % 400 == 0){
+                System.out.println("This is a leap year");
+            }
+            else if(yr % 100 == 0)
+            {
+                System.out.println("This is not a leap year");
+            }
+            else
+            {
+                 System.out.println("This is not a leap year");
+
+            }
+            System.out.println("*********");
+            System.out.println("Enter the student mark");
+            int mark = s.nextInt();
+            if(mark >35 && mark <=45)
+            {
+                System.out.println("The student is pass and D grade");
+            }
+            else if (mark >45 && mark <=60)
+            {
+                System.out.println("The student is pass and C grade");
+            }
+            else if(mark >60 && mark <=80)
+            {
+                System.out.println("The student is pass and B grade");
+            }
+            else if(mark >80 && mark <=90)
+            {
+                System.out.println("The student is pass and A grade");
+            }
+            else if(mark >90)
+            {
+                System.out.println("The student is pass and S grade");
+            }
+            else
+            {
+                System.out.println("The student is fail");
+            }
+           System.out.println("*********");
+            System.out.println("Enter the patient temperature0");
+            float temprt=s.nextFloat();
+            if (temprt > 99.5){
+                System.out.println("Fever, please do take a medication and take rest");
+            }
+            else{
+                System.out.println("You dont have a fever , chill and rest");
+            }
+              
+            System.out.println("*********");
+            System.out.println("Simple calculator");
+            System.out.println("Enter the first number");
+            double num1 = s.nextDouble();
+            System.out.println("Enter the second number");
+            double num2 =s.nextDouble();
+            double num3;
+            System.out.println("Enter the operator..1. Addition 2.Subtraction 3.Multiplication 5. Division 6.MOdulus");
+            char op=s.next().charAt(0);
+                switch (op) {
+                    case '+':
+                        {
+                            num3=num1+num2;
+                            System.out.println("The addition of two numbers is "+num3);
+                        }
+                        break;  
+                        case '-':
+                        {
+                            num3=num1-num2;
+                            System.out.println("The subtraction of two numbers is "+num3);
+                        }
+                        break; 
+                        case '*':
+                        {
+                            num3=num1*num2;
+                            System.out.println("The multiplication of two numbers is "+num3);
+                        }
+                        break; 
+                        case '/':
+                        {
+                            num3=num1/num2;
+                            System.out.println("The division of two numbers is "+num3);
+                        }
+                        break; 
+                        case '%':
+                        {
+                            num3=num1%num2;
+                            System.out.println("The modulos of two numbers is "+num3);
+                        }
+                        break; 
+                
+                    default:
+                        {
+                            System.out.println("Select the given operators");
+                        }
+                        break;
+                }
+    }
+
+        
+}
+
+Output:
+_______
+
+PS C:\Javavs> javac arithmetic.java
+PS C:\Javavs> java arithmetic
+Enter the year
+2024
+This is leap year
+*********
+Enter the student mark
+67
+The student is pass and B grade
+*********
+Enter the patient temperature0
+99.6
+Fever, please do take a medication and take rest
+*********
+Simple calculator
+Enter the first number
+56
+Enter the second number
+3
+Enter the operator..1. Addition 2.Subtraction 3.Multiplication 5. Division 6.MOdulus
+-
+The subtraction of two numbers is 53.0
+
